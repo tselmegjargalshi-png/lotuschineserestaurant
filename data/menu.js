@@ -61,8 +61,8 @@ export const items = [
       "Тусгай зууханд удаан шарж, хальсыг нь алтлаг шаржигнуур, махыг нь зөөлөн шүүслэг болгосон Бээжингийн алдарт нугас. Нимгэн гурилан бин, ногоон сонгино, өргөст хэмх, амтат шошны соустай хамт үйлчилнэ.",
     tags: ["chef"],
     featured: true,
-    image: "commons:Peking duck 1.jpg",
-    credit: "Pauloleong2002 · CC BY-SA 4.0 · Wikimedia Commons"
+    image: "commons:Peking duck by Mr Wabu in Beijing.jpg",
+    credit: "Mr Wabu · CC BY-SA 2.0 · Wikimedia Commons"
   },
   {
     id: "kung-pao-chicken",
@@ -135,11 +135,11 @@ export const items = [
     price: 22900,
     portion: "1 хүний порц",
     description:
-      "Өндөгтэй гоймонг чар сиу гахайн мах, байцаа, шошны соёолж, ногоон сонгинотой хамт вок тогоонд хүчтэй гал дээр хуурсан Хонконг маягийн гоймон.",
+      "Өндөгтэй гоймонг гахайн мах, бок чой байцаа, ногоон сонгинотой хамт вок тогоонд хүчтэй гал дээр шар буурцгийн соустай хуурсан Шанхай маягийн гоймон.",
     tags: [],
     featured: false,
-    image: "commons:Chasiu chow mein in yuen long.jpg",
-    credit: "Peachyeung316 · CC BY-SA 4.0 · Wikimedia Commons"
+    image: "commons:Shanghai Fried Noodles（上海炒面).jpg",
+    credit: "Alpha · CC BY-SA 2.0 · Wikimedia Commons"
   },
   {
     id: "dan-dan-noodles",
@@ -413,11 +413,11 @@ export const items = [
     price: 11900,
     portion: "Аяга",
     description:
-      "Наалдамхай будааны гурилан зөөлөн бөмбөлгийг тээрэмдсэн хар кунжутын өтгөн, бүлээн чихэрлэг шөлтэй үйлчилнэ.",
+      "Хулуу нэмсэн наалдамхай будааны гурилан зөөлөн бөмбөлөг. Дотор нь улаан шош болон хар кунжутаар хийсэн чихэрлэг дүүргэлттэй, бүлээн чихэрлэг шөлтэй үйлчилнэ.",
     tags: ["vegetarian"],
     featured: false,
-    image: "commons:石磨芝麻糊湯丸 - 深深甜品.jpg",
-    credit: "Andy Li · CC0 · Wikimedia Commons"
+    image: "commons:Pumpkin tangyuan (汤圆) with red bean baste and black sesame fillings.jpg",
+    credit: "cherrylet · CC BY 2.0 · Wikimedia Commons"
   },
 
   /* ---------- УНДАА ---------- */
@@ -433,8 +433,8 @@ export const items = [
       "Жасмин цэцгийн анхилуун үнэр шингэсэн ногоон цай. Хоолны дараа ууж, амтыг сэргээхэд тохиромжтой.",
     tags: ["vegetarian"],
     featured: false,
-    image: "commons:Jasmine tea in a glass (8658148091).jpg",
-    credit: "Ruth Hartnup from Vancouver, Canada · CC BY 2.0 · Wikimedia Commons"
+    image: "commons:Jasmine tea at Bangkok 9.jpg",
+    credit: "JIP · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "hong-kong-milk-tea",
@@ -463,8 +463,8 @@ export const items = [
       "Хар чихэрт даршилсан тапиока сувдтай, сэрүүн сүүтэй цай.",
     tags: ["vegetarian"],
     featured: false,
-    image: "commons:Pearl Milk Tea in Chun Shui Tang.jpg",
-    credit: "Battlesnake1 · CC0 · Wikimedia Commons"
+    image: "commons:Classic bubble tea.jpg",
+    credit: "Oqmilteashop · CC BY-SA 3.0 · Wikimedia Commons"
   },
   {
     id: "plum-drink",
@@ -478,8 +478,8 @@ export const items = [
       "Утсан чавга, жимс, чихрээр бэлтгэсэн исгэлэн чихэрлэг амттай, сэрүүн уламжлалт ундаа.",
     tags: ["vegetarian"],
     featured: false,
-    image: "commons:Sour plum drink.jpg",
-    credit: "用心阁/Yongxinge · CC BY-SA 3.0 · Wikimedia Commons"
+    image: "commons:Freshippo rose and sour plum soup (2).jpg",
+    credit: "Fumikas Sagisavas · CC0 · Wikimedia Commons"
   }
 ];
 
