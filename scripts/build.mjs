@@ -31,16 +31,22 @@ export function remoteUrl(image, width = 1280) {
   return null;
 }
 
-async function fetchWithRetry(url, tries = 3) {
+async function fetchWithRetry(url, tries = 4) {
   let lastErr;
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": USER_AGENT }, redirect: "follow" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const res = await fetch(url, { headers: { "User-Agent": USER_AGENT }, redirect: "follow", signal: AbortSignal.timeout(20000) });
+      if (res.status === 429 || res.status >= 500) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        const err = new Error(`HTTP ${res.status}`);
+        err.fatal = true;
+        throw err;
+      }
       return Buffer.from(await res.arrayBuffer());
     } catch (err) {
       lastErr = err;
-      await new Promise((r) => setTimeout(r, 800 * (i + 1)));
+      if (err.fatal) break;
+      await new Promise((r) => setTimeout(r, 2000 * (i + 1)));
     }
   }
   throw lastErr;
@@ -89,7 +95,7 @@ async function main() {
   let ok = 0;
   const failed = [];
   const queue = [...items];
-  const workers = Array.from({ length: 4 }, async () => {
+  const workers = Array.from({ length: 2 }, async () => {
     while (queue.length) {
       const item = queue.shift();
       try {

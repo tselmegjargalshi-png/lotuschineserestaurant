@@ -61,8 +61,8 @@ export const items = [
       "Тусгай зууханд удаан шарж, хальсыг нь алтлаг шаржигнуур, махыг нь зөөлөн шүүслэг болгосон Бээжингийн алдарт нугас. Нимгэн гурилан бин, ногоон сонгино, өргөст хэмх, амтат шошны соустай хамт үйлчилнэ.",
     tags: ["chef"],
     featured: true,
-    image: "commons:Peking Duck, 2014 (02).jpg",
-    credit: ""
+    image: "commons:Peking duck 1.jpg",
+    credit: "Pauloleong2002 · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "kung-pao-chicken",
@@ -76,8 +76,8 @@ export const items = [
       "Шоо хэлбэрээр хэрчсэн тахианы махыг газрын самар, хатаасан улаан чинжүү, ногоон сонгинотой хамт өндөр гал дээр хуурсан Сычуань мужийн алдарт хоол. Амтат, исгэлэн, халуун амт нь тэнцвэртэй хослоно.",
     tags: ["spicy"],
     featured: true,
-    image: "",
-    credit: ""
+    image: "commons:Kung Pao Chicken at Yujiayan Restaurant (20230510123120).jpg",
+    credit: "N509FZ · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "mapo-tofu",
@@ -91,8 +91,8 @@ export const items = [
       "Зөөлөн тофуг татсан үхрийн мах, халуун шошны зуурмаг, Сычуань чинжүүтэй хамт чанасан халуун, анхилуун хоол. Цагаан будаатай хамт идэхэд хамгийн тохиромжтой.",
     tags: ["spicy"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Chen Mapo Tofu.jpg",
+    credit: "ZhengZhou · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "sweet-sour-pork",
@@ -106,8 +106,8 @@ export const items = [
       "Шаржигнатал шарсан гахайн махыг хан боргоцой, амтат чинжүү, сонгинотой хамт амтат исгэлэн соусаар хуурсан Кантон маягийн хоол.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:菠萝咕噜肉.jpg",
+    credit: "Walter Grassroot · CC BY-SA 3.0 · Wikimedia Commons"
   },
 
   /* ---------- ГОЙМОН ---------- */
@@ -123,8 +123,8 @@ export const items = [
       "Гараар сунгаж хийсэн шинэхэн гоймонг долоон цаг чанасан үхрийн махан шөл, нимгэн хэрчсэн үхрийн мах, цагаан лууван, кориандр, чинжүүтэй тосоор үйлчилнэ.",
     tags: ["chef"],
     featured: true,
-    image: "",
-    credit: ""
+    image: "commons:Chinese Beef Noodle Soup - 中式牛肉湯麵.jpg",
+    credit: "NeoBatfreak · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "chow-mein",
@@ -135,11 +135,11 @@ export const items = [
     price: 22900,
     portion: "1 хүний порц",
     description:
-      "Өндөгтэй гоймонг тахианы мах, байцаа, шошны соёолж, лууван, ногоон сонгинотой хамт вок тогоонд хүчтэй гал дээр хуурсан.",
+      "Өндөгтэй гоймонг чар сиу гахайн мах, байцаа, шошны соёолж, ногоон сонгинотой хамт вок тогоонд хүчтэй гал дээр хуурсан Хонконг маягийн гоймон.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Chasiu chow mein in yuen long.jpg",
+    credit: "Peachyeung316 · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "dan-dan-noodles",
@@ -153,8 +153,8 @@ export const items = [
       "Кунжутын зуурмаг, чинжүүтэй тос, Сычуань чинжүү, татсан гахайн махтай халуун амттай гоймон. Самрын анхилуун үнэр нь онцлог.",
     tags: ["spicy"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:担担面 Dandan noodles.jpg",
+    credit: "Sharon Ang · CC0 · Wikimedia Commons"
   },
   {
     id: "zhajiang-noodles",
@@ -168,8 +168,8 @@ export const items = [
       "Бээжингийн уламжлалт шошны зуурмагтай гахайн махан соустай гоймон. Шинэ өргөст хэмх, шошны соёолжоор чимэглэнэ.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Zhajiangmian before stirring at Fangzhuanchang (20210115130756).jpg",
+    credit: "N509FZ · CC BY-SA 4.0 · Wikimedia Commons"
   },
 
   /* ---------- БУДААТАЙ ХООЛ ---------- */
@@ -185,8 +185,8 @@ export const items = [
       "Сам хорхой, чар сиу гахайн мах, өндөг, ногоон вандуй, ногоон сонгинотой хамт вок тогоонд хуурсан алтлаг шарсан будаа.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Yeung Chow Fried Rice in Hong Kong Fast Food Shop.JPG",
+    credit: "Ceeseven · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "hainan-chicken-rice",
@@ -200,8 +200,8 @@ export const items = [
       "Тахианы шөлөнд болгосон анхилуун будаа, зөөлөн чанасан тахианы мах, цагаан гаатай болон чинжүүтэй соус, шинэ өргөст хэмхтэй.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Hainanese chicken rice.jpg",
+    credit: "Misaochan · CC BY 4.0 · Wikimedia Commons"
   },
   {
     id: "char-siu-rice",
@@ -215,8 +215,8 @@ export const items = [
       "Зөгийн бал, таван амтлагчаар даршилж шарсан Кантон маягийн чар сиу гахайн махыг цагаан будаа, чанасан ногоотой хамт үйлчилнэ.",
     tags: ["chef"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Char Siu & Fried Egg with Rice.jpg",
+    credit: "Ceeseven · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "claypot-rice",
@@ -230,8 +230,8 @@ export const items = [
       "Шавар тогоонд удаан болгосон будаа, Кантон хиам, тахианы мах, мөөгтэй. Тогооны ёроолд үүссэн шаржигнуур хальс нь энэ хоолны гол онцлог.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Cured Meat Claypot Rice at The Soup Kitchen (20200718171540).jpg",
+    credit: "N509FZ · CC BY-SA 4.0 · Wikimedia Commons"
   },
 
   /* ---------- БАНШ ---------- */
@@ -247,8 +247,8 @@ export const items = [
       "Нимгэн гурилан дотроо халуун шөл, гахайн махан чанартай Шанхайн алдарт уурын банш. Цагаан гаатай хар цуунд дүрж идээрэй.",
     tags: ["chef"],
     featured: true,
-    image: "",
-    credit: ""
+    image: "commons:2019-02-22 Xiaolongbao in \"Taste Of Shanghai\" restaurant, Sydney, Australia.jpg",
+    credit: "Maksym Kozlenko · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "har-gow",
@@ -262,8 +262,8 @@ export const items = [
       "Тунгалаг нимгэн гурилтай, бүтэн сам хорхойн чанартай Кантон дим сам. Зөөлөн, шүүслэг амттай.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Har Gow at Canal Luna restaurant, InterContinental Guangzhou Exhibition Center (20180923125523).jpg",
+    credit: "N509FZ · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "siu-mai",
@@ -277,8 +277,8 @@ export const items = [
       "Гахайн мах, сам хорхой, мөөгөөр чанартай, дээд тал нь задгай хэлбэртэй уурын банш.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Prawn-and-pork-siu-mai.jpg",
+    credit: "Sara McCleary · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "potstickers",
@@ -292,8 +292,8 @@ export const items = [
       "Ёроолыг нь алтлаг шаржигнатал хайруулдаад уураар жигнэсэн гахайн мах, байцааны чанартай банш.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:15 pan fried dumplings of Bafang Yunji 20150305.jpg",
+    credit: "a2335825 · CC BY-SA 2.0 · Wikimedia Commons"
   },
 
   /* ---------- ШӨЛ ---------- */
@@ -309,8 +309,8 @@ export const items = [
       "Тофу, мод мөөг, хулсны найлзуур, өндөгтэй, хар цуу болон цагаан чинжүүний амттай өтгөн шөл.",
     tags: ["spicy"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Hot-and-Sour-Soup-Bowl.jpg",
+    credit: "Evan-Amos · Public domain · Wikimedia Commons"
   },
   {
     id: "wonton-soup",
@@ -324,8 +324,8 @@ export const items = [
       "Сам хорхой, гахайн махан чанартай зөөлөн вонтонг тунгалаг тахианы шөлөнд ногоон ногоотой хамт үйлчилнэ.",
     tags: [],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Wonton soup at 65 Huguosi St (20211221173225).jpg",
+    credit: "N509FZ · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "egg-drop-soup",
@@ -339,8 +339,8 @@ export const items = [
       "Тунгалаг шөлөнд өндгийг нимгэн цэцэг шиг задлан, ногоон сонгинотой болгосон зөөлөн амттай шөл.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Egg Drop Soup (蛋花湯）.jpg",
+    credit: "Ralff Nestor Nacor · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "tomato-egg-soup",
@@ -354,8 +354,8 @@ export const items = [
       "Шинэ улаан лооль, өндөг, ногоон сонгинотой, исгэлэн чихэрлэг амттай гэрийн уламжлалт шөл.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Tomato and egg soup.jpg",
+    credit: "NNU-10-HanRongrong · CC BY 3.0 · Wikimedia Commons"
   },
 
   /* ---------- АМТТАН ---------- */
@@ -371,8 +371,8 @@ export const items = [
       "Олон давхар шаржигнуур гурилан дотор зөөлөн өндөгний кремтэй Хонконг маягийн амттан.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Hong Kong Dan tat.jpg",
+    credit: "stu_spivack · CC BY-SA 2.0 · Wikimedia Commons"
   },
   {
     id: "mango-sago",
@@ -386,8 +386,8 @@ export const items = [
       "Шинэ манго, кокосын сүү, саго бөмбөлөг, грейпфрутын ширхэгтэй сэрүүн, зөөлөн амттан.",
     tags: ["vegetarian"],
     featured: true,
-    image: "",
-    credit: ""
+    image: "commons:MangoPomeloSago 1.jpg",
+    credit: "Thomas.Lu · CC BY 3.0 · Wikimedia Commons"
   },
   {
     id: "sesame-balls",
@@ -401,8 +401,8 @@ export const items = [
       "Гадуураа кунжутаар бүрсэн, дотроо улаан шошны чихэрлэг зуурмагтай шаржигнуур бөмбөлөг.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Fried sesame balls with a sweet filling (芝麻煎堆仔) 02.jpg",
+    credit: "Ecritures · CC BY-SA 4.0 · Wikimedia Commons"
   },
   {
     id: "tangyuan",
@@ -413,11 +413,11 @@ export const items = [
     price: 11900,
     portion: "Аяга",
     description:
-      "Наалдамхай будааны гурилан бөмбөлгийг хар кунжутын чихэрлэг чанартай болгож, цагаан гаатай бүлээн шөлөнд үйлчилнэ.",
+      "Наалдамхай будааны гурилан зөөлөн бөмбөлгийг тээрэмдсэн хар кунжутын өтгөн, бүлээн чихэрлэг шөлтэй үйлчилнэ.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:石磨芝麻糊湯丸 - 深深甜品.jpg",
+    credit: "Andy Li · CC0 · Wikimedia Commons"
   },
 
   /* ---------- УНДАА ---------- */
@@ -433,8 +433,8 @@ export const items = [
       "Жасмин цэцгийн анхилуун үнэр шингэсэн ногоон цай. Хоолны дараа ууж, амтыг сэргээхэд тохиромжтой.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Jasmine tea in a glass (8658148091).jpg",
+    credit: "Ruth Hartnup from Vancouver, Canada · CC BY 2.0 · Wikimedia Commons"
   },
   {
     id: "hong-kong-milk-tea",
@@ -448,8 +448,8 @@ export const items = [
       "Хүчтэй хар цайг өтгөрүүлсэн сүүтэй хольсон, зөөлөн, өтгөн амттай Хонконг маягийн цай. Халуун болон хүйтнээр захиалж болно.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Hong Kong-style Milk Tea.jpg",
+    credit: "WiNG · CC BY-SA 3.0 · Wikimedia Commons"
   },
   {
     id: "bubble-tea",
@@ -463,8 +463,8 @@ export const items = [
       "Хар чихэрт даршилсан тапиока сувдтай, сэрүүн сүүтэй цай.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Pearl Milk Tea in Chun Shui Tang.jpg",
+    credit: "Battlesnake1 · CC0 · Wikimedia Commons"
   },
   {
     id: "plum-drink",
@@ -478,8 +478,8 @@ export const items = [
       "Утсан чавга, жимс, чихрээр бэлтгэсэн исгэлэн чихэрлэг амттай, сэрүүн уламжлалт ундаа.",
     tags: ["vegetarian"],
     featured: false,
-    image: "",
-    credit: ""
+    image: "commons:Sour plum drink.jpg",
+    credit: "用心阁/Yongxinge · CC BY-SA 3.0 · Wikimedia Commons"
   }
 ];
 

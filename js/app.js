@@ -11,6 +11,8 @@ const STORE_KEY = "lotus-order-v1";
 const formatPrice = (n) => `${String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}${restaurant.currency}`;
 const escapeHtml = (s = "") =>
   String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+// Visible text never shows hyphens or dashes (brand rule); used for photo credits.
+const noDash = (s = "") => String(s).replace(/[\u002D\u2010-\u2015\u2212]+/g, " ").replace(/\s{2,}/g, " ");
 const icon = (id, cls = "") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${id}"/></svg>`;
 
 // Lowercase and fold Mongolian specific letters so "уйгур" also finds "үйгүр" and
@@ -486,7 +488,7 @@ function openDish(id) {
     .filter((t) => TAG_ICON[t])
     .map((t) => `<span class="tag">${icon(TAG_ICON[t][0], TAG_ICON[t][1])}${tagLabels[t]}</span>`)
     .join("");
-  $("[data-dish-credit]").textContent = i.credit ? `Зураг: ${i.credit}` : "";
+  $("[data-dish-credit]").textContent = i.credit ? `Зураг: ${noDash(i.credit)}` : "";
   updateDishTotal();
   openDialog(dlg, `#dish=${i.id}`);
 }
@@ -529,7 +531,7 @@ function renderCredits() {
       const src = i.image?.startsWith("commons:")
         ? `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(i.image.slice(8).trim().replace(/ /g, "_"))}`
         : null;
-      return `<li><b>${escapeHtml(i.name)}</b><br>${escapeHtml(i.credit || "Ресторанаас өгсөн зураг")}${src ? ` · <a href="${src}" target="_blank" rel="noopener">Эх файл</a>` : ""}</li>`;
+      return `<li><b>${escapeHtml(i.name)}</b><br>${escapeHtml(noDash(i.credit) || "Ресторанаас өгсөн зураг")}${src ? ` · <a href="${src}" target="_blank" rel="noopener">Эх файл</a>` : ""}</li>`;
     })
     .join("");
 }
