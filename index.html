@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lotus Chinese Restaurant · Дижитал меню</title>
+  <meta name="description" content="Lotus Chinese Restaurant. Хятадын уламжлалт амт, орчин үеийн тансаг үйлчилгээ. Цахим меню, хайлт, захиалга.">
+  <meta name="theme-color" content="#0b231c">
+  <meta property="og:title" content="Lotus Chinese Restaurant · Дижитал меню">
+  <meta property="og:description" content="Хятадын уламжлалт амт, орчин үеийн тансаг үйлчилгээ.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-lotus" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M32 10c6 7 9 14 9 21s-4 13-9 15c-5-2-9-8-9-15s3-14 9-21Z"/><path d="M23 33c-5-4-11-5-17-4 1 8 6 15 14 17 4 1 8 0 12 0"/><path d="M41 33c5-4 11-5 17-4-1 8-6 15-14 17-4 1-8 0-12 0"/><path d="M12 50h40"/></g></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 3v8a3 3 0 0 0 6 0V3M8 3v18M17 3c-2 2-3 5-3 8h3v10"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 8h14l-1 12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M5 12h14"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-chili" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 3c-.6 0-1 .4-1 1v1.1c-1.3.3-2.2 1.3-2.5 2.6-.7 3.3-3.5 7.6-9.5 9.3-.8.2-1 1.2-.4 1.7C6 20.3 8.4 21 11 21c5.7 0 9-4.6 9-9.4 0-2-.8-3.6-2.1-4.6l.6-1.5V4c0-.6-.4-1-1-1Z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4c-9 0-15 4-15 11 0 1.4.3 2.6.9 3.6L4 20.5 5.5 22l1.9-1.9c1 .6 2.2.9 3.6.9 7 0 9-7 9-17Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.7 6 6.5.6-4.9 4.3 1.5 6.4L12 16.8l-5.8 3.3 1.5-6.4L2.8 9.4l6.5-.6z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></g></symbol>
+    <symbol id="i-sms" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></symbol>
+  </svg>
+
+  <a class="skip" href="#menu">Меню руу шууд очих</a>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="Нүүр хуудас">
+      <svg class="brand__mark" aria-hidden="true"><use href="#i-lotus"/></svg>
+      <span class="brand__text"><b>Lotus</b><small>Chinese Restaurant</small></span>
+    </a>
+    <button class="topbar__order" type="button" data-open-order aria-label="Миний захиалга">
+      <svg aria-hidden="true"><use href="#i-bag"/></svg>
+      <span class="badge" data-order-count hidden>0</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img class="hero__img" alt="" data-hero-img>
+        <span class="hero__glyph">莲</span>
+      </div>
+      <div class="hero__inner">
+        <p class="eyebrow"><span class="eyebrow__line"></span>Хятад ресторан · Улаанбаатар</p>
+        <h1 id="hero-title" class="hero__title"><span>Lotus</span> Chinese Restaurant</h1>
+        <p class="hero__zh" data-r="nameZh"></p>
+        <p class="hero__tagline" data-r="tagline"></p>
+        <p class="hero__intro" data-r="intro"></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#menu">
+            <svg aria-hidden="true"><use href="#i-menu"/></svg>Меню үзэх
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#qr">
+            <svg aria-hidden="true"><use href="#i-qr"/></svg>QR код
+          </a>
+        </div>
+        <ul class="hero__facts">
+          <li><svg aria-hidden="true"><use href="#i-clock"/></svg><span data-r="hours"></span></li>
+          <li><svg aria-hidden="true"><use href="#i-phone"/></svg><a data-r-phone></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section featured" id="featured" aria-labelledby="featured-title">
+      <div class="section__head">
+        <p class="kicker">Тогоочийн сонголт</p>
+        <h2 id="featured-title" class="section__title">Онцлох хоол</h2>
+      </div>
+      <div class="featured__rail" data-featured role="list"></div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="section__head">
+        <p class="kicker">Бүрэн меню</p>
+        <h2 id="menu-title" class="section__title">Меню</h2>
+      </div>
+
+      <div class="menu__tools" id="menu-tools">
+        <label class="search" for="search">
+          <svg aria-hidden="true"><use href="#i-search"/></svg>
+          <span class="sr-only">Хоол хайх</span>
+          <input id="search" type="search" placeholder="Хоолны нэр, орц хайх" autocomplete="off" enterkeyhint="search">
+          <button class="search__clear" type="button" data-search-clear aria-label="Хайлтыг цэвэрлэх" hidden>
+            <svg aria-hidden="true"><use href="#i-close"/></svg>
+          </button>
+        </label>
+        <div class="chips" role="tablist" aria-label="Ангилал" data-chips></div>
+      </div>
+
+      <p class="menu__status" aria-live="polite" data-status></p>
+      <div class="menu__list" data-menu></div>
+      <div class="empty" data-empty hidden>
+        <svg aria-hidden="true"><use href="#i-search"/></svg>
+        <p><b>Илэрц олдсонгүй</b></p>
+        <p>Өөр үгээр хайж үзнэ үү, эсвэл бүх ангиллыг харна уу.</p>
+        <button class="btn btn--outline" type="button" data-reset>Бүх хоолыг харах</button>
+      </div>
+    </section>
+
+    <!-- QR -->
+    <section class="section qr" id="qr" aria-labelledby="qr-title">
+      <div class="qr__card">
+        <div class="qr__text">
+          <p class="kicker">Ширээн дээрх меню</p>
+          <h2 id="qr-title" class="section__title">QR кодоор меню нээх</h2>
+          <p>Утасныхаа камерыг QR код руу чиглүүлэхэд энэ меню шууд нээгдэнэ. Аппликейшн татах шаардлагагүй.</p>
+          <div class="qr__actions">
+            <button class="btn btn--gold" type="button" data-qr-download>
+              <svg aria-hidden="true"><use href="#i-download"/></svg>QR татах
+            </button>
+            <button class="btn btn--ghost" type="button" data-copy-link>
+              <svg aria-hidden="true"><use href="#i-copy"/></svg>Холбоос хуулах
+            </button>
+          </div>
+        </div>
+        <figure class="qr__code">
+          <canvas data-qr width="320" height="320" role="img" aria-label="Менюгийн QR код"></canvas>
+          <figcaption data-qr-url></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section class="section info" id="info" aria-label="Холбоо барих">
+      <ul class="info__list">
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg><div><small>Цагийн хуваарь</small><span data-r="hours"></span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><small>Хаяг</small><span data-r="address"></span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><small>Утас</small><a data-r-phone></a></div></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="footer__mark" aria-hidden="true"><use href="#i-lotus"/></svg>
+    <p>© <span data-year></span> Lotus Chinese Restaurant</p>
+    <p class="footer__note">Үнэ төгрөгөөр, НӨАТ орсон. Хоол бэлтгэхэд дунджаар 20 минут шаардагдана.</p>
+    <button class="linkbtn" type="button" data-open-credits>Зургийн эх сурвалж</button>
+  </footer>
+
+  <!-- Floating order bar -->
+  <button class="orderbar" type="button" data-open-order data-orderbar hidden>
+    <span class="orderbar__count" data-order-count>0</span>
+    <span class="orderbar__label">Захиалга харах</span>
+    <span class="orderbar__total" data-order-total></span>
+  </button>
+
+  <!-- Bottom navigation (thumb zone) -->
+  <nav class="bottomnav" aria-label="Үндсэн цэс">
+    <a href="#home" data-nav="home"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Нүүр</span></a>
+    <a href="#menu" data-nav="menu"><svg aria-hidden="true"><use href="#i-menu"/></svg><span>Меню</span></a>
+    <button type="button" data-nav-search><svg aria-hidden="true"><use href="#i-search"/></svg><span>Хайх</span></button>
+    <button type="button" data-open-order data-nav="order"><svg aria-hidden="true"><use href="#i-bag"/></svg><span>Захиалга</span><i class="badge" data-order-count hidden>0</i></button>
+  </nav>
+
+  <!-- Dish detail -->
+  <dialog class="sheet dish" id="dish-dialog" aria-labelledby="dish-name">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <button class="sheet__close" type="button" data-close aria-label="Хаах"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="dish__media"><img data-dish-img alt=""></div>
+    <div class="dish__body">
+      <p class="dish__cat" data-dish-cat></p>
+      <h2 class="dish__name" id="dish-name" data-dish-name></h2>
+      <p class="dish__zh" data-dish-zh></p>
+      <div class="dish__tags" data-dish-tags></div>
+      <p class="dish__desc" data-dish-desc></p>
+      <dl class="dish__meta">
+        <div><dt>Хэмжээ</dt><dd data-dish-portion></dd></div>
+        <div><dt>Үнэ</dt><dd class="price" data-dish-price></dd></div>
+      </dl>
+      <p class="dish__credit" data-dish-credit></p>
+    </div>
+    <div class="dish__actions">
+      <div class="stepper" aria-label="Тоо ширхэг">
+        <button type="button" data-qty-minus aria-label="Хасах"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+        <output data-qty aria-live="polite">1</output>
+        <button type="button" data-qty-plus aria-label="Нэмэх"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+      </div>
+      <button class="btn btn--primary btn--block" type="button" data-add>
+        <span>Захиалгад нэмэх</span><b data-add-total></b>
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Order -->
+  <dialog class="sheet order" id="order-dialog" aria-labelledby="order-title">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <button class="sheet__close" type="button" data-close aria-label="Хаах"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="order__head">
+      <p class="kicker">Таны сонголт</p>
+      <h2 id="order-title" class="section__title">Миний захиалга</h2>
+    </div>
+
+    <div class="order__empty" data-order-empty>
+      <svg aria-hidden="true"><use href="#i-bag"/></svg>
+      <p><b>Захиалга хоосон байна</b></p>
+      <p>Менюгээс хоол сонгоод "Захиалгад нэмэх" товчийг дарна уу.</p>
+      <a class="btn btn--primary" href="#menu" data-close>Меню үзэх</a>
+    </div>
+
+    <div class="order__content" data-order-content>
+      <ul class="order__list" data-order-list></ul>
+      <div class="order__fields">
+        <label>Ширээний дугаар
+          <input type="text" inputmode="numeric" maxlength="4" placeholder="Жишээ нь 12" data-table>
+        </label>
+        <label>Нэмэлт хүсэлт
+          <textarea rows="2" maxlength="240" placeholder="Жишээ нь халуун ногоог багасгах" data-note></textarea>
+        </label>
+      </div>
+      <div class="order__total"><span>Нийт дүн</span><b data-order-sum></b></div>
+      <p class="order__hint">Захиалгаа доорх аргуудын аль нэгээр ресторанд илгээнэ үү.</p>
+      <div class="order__send">
+        <a class="btn btn--primary btn--block" data-send-sms><svg aria-hidden="true"><use href="#i-sms"/></svg>SMS илгээх</a>
+        <a class="btn btn--gold btn--block" data-send-call><svg aria-hidden="true"><use href="#i-phone"/></svg>Утсаар захиалах</a>
+        <div class="order__row">
+          <button class="btn btn--outline" type="button" data-send-copy><svg aria-hidden="true"><use href="#i-copy"/></svg>Хуулах</button>
+          <button class="btn btn--outline" type="button" data-send-share hidden><svg aria-hidden="true"><use href="#i-share"/></svg>Хуваалцах</button>
+          <button class="btn btn--outline btn--danger" type="button" data-order-clear><svg aria-hidden="true"><use href="#i-trash"/></svg>Цэвэрлэх</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Credits -->
+  <dialog class="sheet credits" id="credits-dialog" aria-labelledby="credits-title">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <button class="sheet__close" type="button" data-close aria-label="Хаах"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <h2 id="credits-title" class="section__title">Зургийн эх сурвалж</h2>
+    <p class="credits__intro">Хоолны зургууд Wikimedia Commons дээрх нээлттэй лицензтэй бүтээлүүд бөгөөд меню дээр нэг хэмжээнд тайрч боловсруулсан. Жинхэнэ ресторанд ашиглахдаа өөрийн хоолны зургаар солихыг зөвлөж байна.</p>
+    <ul class="credits__list" data-credits></ul>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
